@@ -1,8 +1,9 @@
-var elemName;
-var emId;
-function playYoutubeVideoOnElement(elementName, embedId) {
-    elemName = elementName;
-    emId = embedId;
+var _element;
+var _embedId;
+
+function playYoutubeVideoOnElement(element, embedId) {
+    _element = element;
+    _embedId = embedId;
 
     // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
@@ -16,9 +17,9 @@ function playYoutubeVideoOnElement(elementName, embedId) {
 //    after the API code downloads.
 var player;
 function onYouTubeIframeAPIReady() {
-    player = new YT.Player(elemName, {
-        videoId: emId,
-        playerVars: { 'autoplay': 1, 'playsinline': 1, "loop": 1, "playlist": 'd-3e0722WOY' },
+    player = new YT.Player(_element.id, {
+        videoId: _embedId,
+        playerVars: { 'autoplay': 1, 'playsinline': 1, "loop": 1, "playlist": _embedId, "vq": 'hd1080' },
         events: {
             'onReady': onPlayerReady,
         }

@@ -13,6 +13,7 @@
 
     <!-- Scripts -->
     <script src="js/youtubeVideoEmbedder"></script>
+    <script src="js/dateTimeGreetingFormatter"></script>
 
 </head>
 
@@ -20,17 +21,17 @@
     <div class="header">
         <img class="logo" src="img/chip_logo.png">
         <div class="title">
-            <p class="name">Tygo Boons</p>
-            <p class="job_title">Software Developer</p>
+            <p id="name">Tygo Boons</p>
+            <p id="job_title">Software Developer</p>
         </div>
     </div>
 
     <div class="video_container">
         <div id="player"></div>
         <div class="mask">
-            <div class="introduction">
-                <p class="day_text">Good Morning,</p>
-                <p class="welcome_text">Welcome to my Portfolio.</p>
+            <div id="introduction">
+                <p id="day_text">Good Morning,</p>
+                <p id="welcome_text">Welcome to my Portfolio.</p>
             </div>
         </div>
     </div>
@@ -43,5 +44,6 @@
 </html>
 
 <script>
-    playYoutubeVideoOnElement('player', 'd-3e0722WOY');
+playYoutubeVideoOnElement(document.getElementById('player'), 'd-3e0722WOY');
+setGreetingFromTime(document.getElementById('day_text'));
 </script>

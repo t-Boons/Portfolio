@@ -29,7 +29,7 @@ body
     margin-left: 30px;
 }
 
-.name
+#name, #job_title
 {
     margin: 0;
     color: white;
@@ -39,13 +39,10 @@ body
     letter-spacing: 10px;
 }
 
-.job_title
+#job_title
 {
-    margin: 0;
     color: rgb(216, 216, 216);
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
-    font-weight: 100;
     letter-spacing: 2px;
 }
 
@@ -73,33 +70,31 @@ body
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 150%);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 15%), rgba(0, 0, 0, 0.25);
 }
 
-.video_container .introduction
+#introduction
 {
     margin: auto;
     margin-top: 14%;
     width: max-content;
-    color: #FFFFFF;
-    text-shadow:  #000000 0px 0px 100px, #000000 0px 0px 75px, #000000 0px 0px 50px, #000000 0px 0px 25px;
+    background-color: rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 40px 20px rgb(0, 0, 0, 0.3);
 }
 
-.day_text
+#day_text, #welcome_text
 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 50px;
     color:white;
-    font-weight: 200;
-    letter-spacing: 6px;
+    font-weight: 500;
+    letter-spacing: 12px;
+    text-shadow: 0px 0px 20px #000000, 0px 0px 9px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000;
 }
 
-.welcome_text
+#welcome_text
 {
-    margin-top: -30px;
-    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: -60px;
     font-size: 25px;
-    color:white;
-    font-weight: 200;
-    letter-spacing: 6px;
+    letter-spacing: 1.5px;
 }
