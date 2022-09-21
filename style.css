@@ -70,7 +70,7 @@ body
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 15%), rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 15%), rgba(0, 0, 0, 0.3);
 }
 
 #introduction
@@ -78,8 +78,8 @@ body
     margin: auto;
     margin-top: 14%;
     width: max-content;
-    background-color: rgba(0, 0, 0, 0.24);
-    box-shadow: 0px 0px 40px 20px rgb(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 0px 40px 20px rgb(0, 0, 0, 0.35);
 }
 
 #day_text, #welcome_text
@@ -87,14 +87,13 @@ body
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 50px;
     color:white;
-    font-weight: 500;
+    font-weight: 100;
     letter-spacing: 12px;
-    text-shadow: 0px 0px 20px #000000, 0px 0px 9px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000;
 }
 
 #welcome_text
 {
-    margin-top: -60px;
-    font-size: 25px;
+    margin-top: -50px;
+    font-size: 22px;
     letter-spacing: 1.5px;
 }
