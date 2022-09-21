@@ -58,7 +58,7 @@ body
 }
 
 
-.video_container iframe
+.video_container #player
 {
     position: relative;
     width: 100vw;
