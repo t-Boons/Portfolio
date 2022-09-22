@@ -6,14 +6,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
 
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+
     <!-- Fonts !-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="js/youtubeVideoEmbedder.js"></script>
     <script src="js/dateTimeGreetingFormatter.js"></script>
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
 
 </head>
 
@@ -27,13 +29,14 @@
     </div>
 
     <div class="video_container">
-        <div id="player"></div>
+        <video-js id="player" autoplay mute src="vid/content_preview.mp4"></video-js>
         <div class="mask">
-            <div id="introduction">
-                <p id="day_text">Good Morning,</p>
-                <p id="welcome_text">Welcome to my Portfolio.</p>
-            </div>
         </div>
+    </div>
+    
+    <div id="introduction">
+        <p id="day_text">Good Morning,</p>
+        <p id="welcome_text">Welcome to my Portfolio.</p>
     </div>
 
     <div>
@@ -44,6 +47,10 @@
 </html>
 
 <script>
-playYoutubeVideoOnElement(document.getElementById('player'), 'd-3e0722WOY');
 setGreetingFromTime(document.getElementById('day_text'));
+
+var player = videojs('player')
+player.muted(true);
+player.autoplay(true);
+player.aspectRatio('16:9')
 </script>
