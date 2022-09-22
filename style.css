@@ -118,18 +118,21 @@ html { -ms-overflow-style: none; }
     margin-top: -2px;
 }
 
-@media (max-aspect-ratio: 1/1)
-{
-    #player
-    {
-        left: -50vw;
-    }
-}
-
-.video_container
+#video_wrapper
 {
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     overflow: hidden;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+}
+
+@media (min-aspect-ratio: 1/1)
+{
+    #video_wrapper
+    {
+        height: 100vh;
+    }
+
 }
