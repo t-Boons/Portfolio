@@ -5,6 +5,7 @@
     <title>Tygo Boons</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spinner.css">
 
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 
@@ -18,6 +19,14 @@
     <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
 
 </head>
+
+<div id="loading_mask"></div>
+
+<div id="introduction">
+    <p id="day_text">Good Morning,</p>
+    <p id="welcome_text">Welcome to my Portfolio.</p>
+    <span class="spinner"></span>
+</div>
 
 <body>
     <div class="header">
@@ -33,11 +42,6 @@
         <div class="mask">
         </div>
     </div>
-    
-    <div id="introduction">
-        <p id="day_text">Good Morning,</p>
-        <p id="welcome_text">Welcome to my Portfolio.</p>
-    </div>
 
     <div>
         <h1>Content</h1>
@@ -47,10 +51,11 @@
 </html>
 
 <script>
-setGreetingFromTime(document.getElementById('day_text'));
+    setGreetingFromTime(document.getElementById('day_text'));
 
-var player = videojs('player')
-player.muted(true);
-player.autoplay(true);
-player.aspectRatio('16:9')
+    var player = videojs('player');
+        player.muted(true);
+        player.loop(true);
+        player.aspectRatio('16:9');
+        player.autoplay(true);
 </script>
