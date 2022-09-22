@@ -121,18 +121,13 @@ html { -ms-overflow-style: none; }
 #video_wrapper
 {
     width: 100vw;
-    height: max-content;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     margin: auto auto;
 }
 
-@media (min-aspect-ratio: 1/1)
-{
-    #video_wrapper
-    {
-        height: 100vh;
-    }
-
-}
+/* Required to fit VideoJs player */
+.vjs-tech { object-fit: cover !important; width: 100% !important; height:100% !important;} 
+.player-dimensions { height: 100% !important; width: 100% !important; }
