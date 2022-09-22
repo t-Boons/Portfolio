@@ -38,7 +38,7 @@
     </div>
 
     <div class="video_container">
-        <video-js id="player" autoplay mute src="vid/content_preview.mp4"></video-js>
+        <video-js id="player" autoplay   muted src="vid/content_preview.mp4"></video-js>
         <div class="mask">
         </div>
     </div>
@@ -56,6 +56,11 @@
     var player = videojs('player');
         player.muted(true);
         player.loop(true);
-        player.aspectRatio('16:9');
         player.autoplay(true);
+        player.aspectRatio('16:9');
+        player.play();
+
+        setTimeout(() => {
+            player.currentTime(0);
+        }, 2000);
 </script>
