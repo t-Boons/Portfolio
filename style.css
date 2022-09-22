@@ -8,7 +8,7 @@ body
 
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 html::-webkit-scrollbar { width: 0 !important }
@@ -67,8 +67,8 @@ html { -ms-overflow-style: none; }
 }
 
 @keyframes header_fade {
-    0% {margin-top: -90px;}
-    50% {margin-top: -90px;}
+    0% {margin-top: -75px;}
+    50% {margin-top: -75px;}
     100% {margin-top: 0px;}
   }
 
@@ -76,7 +76,7 @@ html { -ms-overflow-style: none; }
 {
     position: fixed;
     width: 100vw;
-    height: 90px;
+    height: 75px;
     background-color: rgba(0, 0, 0, 1);
     display: flex;
     justify-content:left;
@@ -93,28 +93,29 @@ html { -ms-overflow-style: none; }
 .logo
 {
     margin-left: 10px;
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
 }
 
 
 .title
 {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 #name, #job_title
 {
     margin: 0;
-    font-size: 42px;
+    font-size: 30px;
     letter-spacing: 10px;
 }
 
 #job_title
 {
     color: rgb(216, 216, 216);
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 2px;
+    margin-top: -2px;
 }
 
 .video_container
