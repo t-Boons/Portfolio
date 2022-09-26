@@ -37,7 +37,7 @@ html { -ms-overflow-style: none; }
 }
 
 
-#introduction
+#loading_content
 {
     z-index: 2;
     width: max-content;
@@ -66,7 +66,7 @@ html { -ms-overflow-style: none; }
     letter-spacing: 1.5px;
 }
 
-@keyframes header_fade {
+@keyframes header_move {
     0% {margin-top: -75px;}
     50% {margin-top: -75px;}
     100% {margin-top: 0px;}
@@ -80,12 +80,11 @@ html { -ms-overflow-style: none; }
     background-color: rgba(0, 0, 0, 1);
     display: flex;
     justify-content:left;
-    align-items: center;
     z-index: 1;
     -webkit-box-shadow: 1px 9px 24px 3px #00000086; 
     box-shadow: 1px 9px 24px 3px #00000086;
 
-    animation-name: header_fade;
+    animation-name: header_move;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
@@ -122,12 +121,50 @@ html { -ms-overflow-style: none; }
 {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    display: flex;
     justify-content: center;
     margin: auto auto;
+    z-index: -1;
+}
+
+@keyframes content_move {
+    0% {margin-top: 0px;}
+    50% {margin-top: 0px;}
+    100% {margin-top: -200px;}
+  }
+
+#content
+{
+    position: absolute;
+
+    z-index: 1;
+    width: 100vw;
+    height: max-content;
+    background-color: black;
+    animation-name: content_move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#greeting-text
+{
+    text-align: center;
+    letter-spacing: 15px;
+    font-weight: 800;
+    font-size: 40px;
+}   
+
+#intro-text
+{
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 18px;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /* Required to fit VideoJs player */
-.vjs-tech { object-fit: cover !important; width: 100% !important; height:100% !important;} 
-.player-dimensions { height: 100% !important; width: 100% !important; }
+.vjs-tech { object-fit: cover !important; width: 100% !important; height:100% !important; z-index: 0 !important} 
+.player-dimensions { height: 100% !important; width: 100% !important; z-index: 0 !important;}
