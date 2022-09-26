@@ -67,8 +67,8 @@ html { -ms-overflow-style: none; }
 }
 
 @keyframes header_move {
-    0% {margin-top: -75px;}
-    50% {margin-top: -75px;}
+    0% {margin-top: -80px;}
+    50% {margin-top: -80px;}
     100% {margin-top: 0px;}
   }
 
@@ -76,7 +76,7 @@ html { -ms-overflow-style: none; }
 {
     position: fixed;
     width: 100vw;
-    height: 75px;
+    height: 80px;
     background-color: rgba(0, 0, 0, 1);
     display: flex;
     justify-content:left;
@@ -91,6 +91,7 @@ html { -ms-overflow-style: none; }
 
 .logo
 {
+    margin-top: 10px;
     margin-left: 10px;
     width: 60px;
     height: 60px;
@@ -99,6 +100,7 @@ html { -ms-overflow-style: none; }
 
 .title
 {
+    margin-top: 10px;
     margin-left: 20px;
 }
 
@@ -143,21 +145,27 @@ html { -ms-overflow-style: none; }
     animation-name: content_move;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+
+    -webkit-box-shadow: 1px -9px 24px 3px #00000086; 
+    box-shadow: 1px -9px 24px 3px #00000086;
 }
 
-#greeting-text
+#introduction-title, #projects-title
 {
     text-align: center;
     letter-spacing: 15px;
     font-weight: 800;
     font-size: 40px;
+
+    text-decoration-line: underline;
+    text-underline-offset: 20px;
+    text-decoration-thickness: 1px;
 }   
 
 #intro-text
 {
-    font-style: italic;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 19px;
     width: max-content;
     height: max-content;
     position: relative;
