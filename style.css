@@ -118,18 +118,16 @@ html { -ms-overflow-style: none; }
     margin-top: -2px;
 }
 
-@media (max-aspect-ratio: 1/1)
-{
-    #player
-    {
-        left: -50vw;
-    }
-}
-
-.video_container
+#video_wrapper
 {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
 }
+
+/* Required to fit VideoJs player */
+.vjs-tech { object-fit: cover !important; width: 100% !important; height:100% !important;} 
+.player-dimensions { height: 100% !important; width: 100% !important; }
