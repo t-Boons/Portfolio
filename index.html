@@ -4,9 +4,8 @@
 <head>
     <title>Tygo Boons</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/spinner.css">
-    <link rel="stylesheet" href="css/arrow_down.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/spinner.css">
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 
     <!-- Fonts !-->
@@ -44,7 +43,8 @@
     <div id="content">
 
         <!--Content animation-->
-        <button id="content-move-button" onclick="SwitchContentAnimation()"></button>
+        <button id="content-move-button" onclick="SwitchContentAnimation()"> <img src="img/arrow_down.png" style="width: 100%;"></button>
+
         <script>
             function SwitchContentAnimation() {
                 var fadeInName = "content_move_forward";
@@ -52,6 +52,7 @@
                 var currentName = document.getElementById("content").style.animationName;
                 var nextName = currentName == fadeInName ? fadeOutName : fadeInName;
                 document.getElementById("content").style.animationName = nextName;
+                // #content found in style.css
             }
 
             setTimeout(() => {
@@ -59,10 +60,10 @@
             }, 2500);
         </script>
 
+
         <div id="introduction">
             <p id="introduction-title">Hello,</p>
             <div class="line" style="height: 1px; width: 75vw; background-color: white; margin-left: 12.5vw;"></div>
-            <div class="spacer" style="height: 20px;"></div>
 
             <div class="inline-center">
                 <p id="intro-text">My name is Tygo and I am an aspiring software developer that loves<br>

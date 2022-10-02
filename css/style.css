@@ -178,13 +178,16 @@ html { -ms-overflow-style: none; }
     transform: translate(-50%, 0);
     margin-top: -75px;
 
-    background-image: url("https://cdn-icons-png.flaticon.com/512/3416/3416111.png");
+    background-color: transparent;
     border: none;
-    transition-duration: 0.15s;
+    
+    transition-duration: 0.25s;
+    opacity: 0.25;
 }
 
 #content-move-button:hover
 {
+    opacity: 1;
 }
 
 #introduction-title, #projects-title
