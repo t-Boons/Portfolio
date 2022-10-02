@@ -160,6 +160,8 @@ html { -ms-overflow-style: none; }
     /* Set By Js!*/
     animation-name: none;
 
+
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
 
     -webkit-box-shadow: 1px -9px 24px 3px #00000086; 
