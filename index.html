@@ -41,11 +41,11 @@
     
 </head>
 
-<div id="loading_mask"></div>
+<div id="loading-mask"></div>
 
-<div id="loading_content">
-    <p id="day_text">Good Morning,</p>
-    <p id="welcome_text">Welcome to my Portfolio.</p>
+<div id="loading-content">
+    <p id="day-text">Good Morning,</p>
+    <p id="welcome-text">Welcome to my Portfolio.</p>
     <span class="spinner"></span>
 </div>
 
@@ -54,26 +54,26 @@
         <img src="img/tygo_logo_colored.png" style="margin-top: 10px; margin-left: 10px; width: 60px; height: 60px;">
         <div class="title">
             <p id="name">Tygo Boons</p>
-            <p id="job_title">Software Developer</p>
+            <p id="job-title">Software Developer</p>
         </div>
     </div>
 
-    <div id="video_wrapper">
+    <div id="video-wrapper">
         <video-js id="player" width="auto" height="auto" autoplay muted src="vid/content_preview.mp4"></video-js>
     </div>
 
-    <div id="content">
+    <div id="content-container">
 
-        <!--Content animation-->
+        <!--Content-container animation-->
         <button id="content-move-button" onclick="SwitchContentAnimation()"> <img src="img/arrow_down.png" style="width: 100%;"></button>
         <script>
             function SwitchContentAnimation() {
                 var fadeInName = "content_move_forward";
                 var fadeOutName = "content_move_backwards";
-                var currentName = document.getElementById("content").style.animationName;
+                var currentName = document.getElementById("content-container").style.animationName;
                 var nextName = currentName == fadeInName ? fadeOutName : fadeInName;
-                document.getElementById("content").style.animationName = nextName;
-                // #content found in style.css
+                document.getElementById("content-container").style.animationName = nextName;
+                // #content-container found in style.css
             }
 
             setTimeout(() => {
@@ -90,7 +90,7 @@
                     to create new projects and learn new things.<br>
                     I am currently studying software development at Sintlucas in Eindhoven<br>where I will be finishing
                     my course this year.</p>
-                <img src="img/tygo_logo_colored.png" style="width: 150px; height: 150px; margin-left: 10px;">
+                <img src="img/tygo_logo_colored.png" style="width: 150px; height: 150px; margin-left: 30px;">
             </div>
             <div class="spacer" style="height: 25px;"></div>
         </div>
@@ -100,6 +100,8 @@
         
         
         <div id="projects-container">
+
+
             <div class="project"
                 style='background-image: url("img/projects/sparky.jpg"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));'>
                 <div class="project-thumbnail-container">
@@ -109,6 +111,8 @@
                     <p class="project-title">Sparky,</p>
                 </div>
             </div>
+
+
         </div>
         
         <div class="spacer" style="height: 250px;"></div>
@@ -118,7 +122,7 @@
 </html>
 
 <script>
-    setGreetingFromTime(document.getElementById('day_text'));
+    setGreetingFromTime(document.getElementById('day-text'));
 
     var player = videojs('player');
     player.muted(true);

@@ -24,12 +24,12 @@ html { -ms-overflow-style: none; }
     100% {opacity: 0;}
 }
 
-#loading_mask, #loading_content, #day_text, #welcome_text
+#loading-mask, #loading-content, #day-text, #welcome-text
 {
     pointer-events: none;
 }
 
-#loading_mask
+#loading-mask
 {
     width: 100vw;
     height: 100vh;
@@ -42,7 +42,7 @@ html { -ms-overflow-style: none; }
     animation-fill-mode: forwards;
 }
 
-#loading_content
+#loading-content
 {
     z-index: 2;
     width: max-content;
@@ -57,13 +57,13 @@ html { -ms-overflow-style: none; }
     animation-fill-mode: forwards;
 }
 
-#day_text, #welcome_text
+#day-text, #welcome-text
 {
     font-size: 50px;
     letter-spacing: 12px;
 }
 
-#welcome_text
+#welcome-text
 {
     margin-top: -50px;
     font-size: 22px;
@@ -103,14 +103,14 @@ html { -ms-overflow-style: none; }
     margin-left: 20px;
 }
 
-#name, #job_title
+#name, #job-title
 {
     margin: 0;
     font-size: 30px;
     letter-spacing: 10px;
 }
 
-#job_title
+#job-title
 {
     color: rgb(216, 216, 216);
     font-size: 17px;
@@ -122,7 +122,7 @@ html { -ms-overflow-style: none; }
 
 /*#region Video*/
 
-#video_wrapper
+#video-wrapper
 {
     width: 100vw;
     height: 100vh;
@@ -152,7 +152,7 @@ html { -ms-overflow-style: none; }
     100% {margin-top: -0px;}
 }
 
-#content
+#content-container
 {
     position: absolute;
 
@@ -200,7 +200,7 @@ html { -ms-overflow-style: none; }
 
 /*#region introduction*/
 
-#introduction-title, #projects-title
+#introduction-title
 {
     text-align: center;
     letter-spacing: 15px;
@@ -228,6 +228,16 @@ html { -ms-overflow-style: none; }
 }
 
 /*#endregion introduction*/
+
+/*#region projects*/
+
+#projects-title
+{
+    text-align: center;
+    letter-spacing: 15px;
+    font-weight: 800;
+    font-size: 40px;
+}
 
 .project
 {
@@ -268,3 +278,5 @@ html { -ms-overflow-style: none; }
     font-weight: 200;
     font-size: 40px;
 }
+
+/*#endregion projects*/
