@@ -81,11 +81,11 @@
             }, 2500);
         </script>
 
-        <div id="introduction">
-            <p id="introduction-title">Hello,</p>
-            <div class="line" style="height: 1px; width: 75vw; background-color: white; margin-left: 12.5vw; opacity: 0.2;"></div>
+        <p id="introduction-title">Hello,</p>
+        <div id="introduction-container">
+            <div class="line" style="height: 1px; width: 75vw; background-color: white; margin-left: 12.5vw; opacity: 0.3;"></div>
             <div class="spacer" style="height: 25px;"></div>
-            <div class="inline-center">
+            <div id="introduction-inline">
                 <p id="intro-text">My name is Tygo and I am an aspiring software developer that loves<br>
                     to create new projects and learn new things.<br>
                     I am currently studying software development at Sintlucas in Eindhoven<br>where I will be finishing
@@ -93,15 +93,27 @@
                 <img src="img/tygo_logo_colored.png" style="width: 150px; height: 150px; margin-left: 10px;">
             </div>
             <div class="spacer" style="height: 25px;"></div>
-            <div class="line" style="height: 1px; width: 75vw; background-color: white; margin-left: 12.5vw; opacity: 0.2;"></div>
         </div>
-
         <p id="projects-title">My Projects,</p>
-
-        <div class="spacer" style="height: 500px;"></div>
-
-    </div>
-</body>
+        
+        <div class="line" style="height: 1px; width: 75vw; background-color: white; margin-left: 12.5vw; opacity: 0.3;"></div>
+        
+        
+        <div id="projects-container">
+            <div class="project"
+                style='background-image: url("img/projects/sparky.jpg"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));'>
+                <div class="project-thumbnail-container">
+                    <img class="project-thumbnail" src="img/projects/sparky.jpg">
+                </div>
+                <div class="project-info-container">
+                    <p class="project-title">Sparky,</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="spacer" style="height: 250px;"></div>
+        </div>
+        </body>
 
 </html>
 
