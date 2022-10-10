@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href='https://css.gg/arrow-down.css' rel='stylesheet'>
 
     <!-- Scripts -->
     <script src="js/dateTimeGreetingFormatter.js"></script>
@@ -121,9 +122,10 @@
                         <img class="software-icon" src="img/icons/csharp.png">
                         <img class="software-icon" src="img/icons/android.png">
                     </div>
+
+                    <button class="project-expand-button" onclick="ExpandProject(0)"> <img src="img/arrow_down_white.png"></button>
                 </div>
             </div>
-
 
         </div>
         
@@ -135,6 +137,20 @@
 
 <script>
     setGreetingFromTime(document.getElementById('day-text'));
+
+    function ExpandProject(elementIndex)
+    {
+        var elements = document.getElementsByClassName('project');
+        var projectToUpdate = elements[elementIndex];
+
+        var animExpand = "project-expand";
+        var animShrink = "project-shrink";
+
+        var currentName = projectToUpdate.style.animationName;
+        var nextName = currentName == animExpand ? animShrink : animExpand;
+        projectToUpdate.style.animationName = nextName;
+    }
+
 
     var player = videojs('player');
     player.muted(true);
