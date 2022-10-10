@@ -257,24 +257,44 @@ html { -ms-overflow-style: none; }
     height: 500px;
 }
 
+/* Low res devices */
+@media only screen 
+and (max-device-width : 1024px)
+{
+    @keyframes project-expand {
+        0% {height: 600px}
+        100% {height: 900px;}
+    }
+    
+    @keyframes project-shrink {
+        0% {height: 900px}
+        100% {height: 600px;}
+    }
+
+    .project
+    {
+    height: 600px;
+    }
+}
+
 /* Mobile portrait */
 @media screen
   and (max-device-width: 480px)
   and (orientation: portrait)
   {
         @keyframes project-expand {
-            0% {height: 1000px}
-            100% {height: 700px;}
+            0% {height: 900px}
+            100% {height: 1200px;}
         }
         
         @keyframes project-shrink {
-            0% {height: 700px}
-            100% {height: 1000px;}
+            0% {height: 1200px}
+            100% {height: 900px;}
         }
 
         .project
         {
-        height: 700px;
+            height: 900px;
         }
     }
 
@@ -336,6 +356,17 @@ html { -ms-overflow-style: none; }
     font-size: 18px;
 }
 
+/* Mobile portrait */
+@media screen
+  and (max-device-width: 480px)
+  and (orientation: portrait)
+{
+    .project-description
+    {
+        font-size: 25px;
+    }
+}
+
 .project-sources
 {
     margin-left: 20px;
@@ -371,12 +402,41 @@ html { -ms-overflow-style: none; }
     width: 50px;
 }
 
-.project-expand-button
+@keyframes video-view {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes video-hide {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.project-video
+{
+    margin-top: 50px;
+    position: relative;
+    width: 75%;
+    margin-left: 12.5%;
+    opacity: 0;
+
+    animation-name: none;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.project-expand-container
 {
     position: absolute;
+    width: 50%;
+    bottom: 25px;
+}
+
+.project-expand-button
+{
     bottom: 25px;
     width: 20px;
-    left: 75%;
+    margin-left: 50%;
 
     background-color: transparent;
     border: none;
@@ -394,5 +454,6 @@ html { -ms-overflow-style: none; }
 {
     width: 30px;
 }
+
 
 /*#endregion projects*/
