@@ -340,7 +340,7 @@ and (max-device-width : 1024px)
 {
     margin-left: 40px;
     text-align: left;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     font-weight: 200;
     font-size: 40px;
 }
