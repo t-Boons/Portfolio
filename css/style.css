@@ -446,6 +446,7 @@ and (max-device-width : 1024px)
     position: absolute;
     width: 50%;
     bottom: 25px;
+    display:flex;
 }
 
 .project-expand-button
