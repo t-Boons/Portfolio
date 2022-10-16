@@ -472,6 +472,7 @@ and (max-device-width : 1024px)
 .project-expand-button img
 {
     width: 30px;
+    height: auto;
 }
 
 
