@@ -452,8 +452,7 @@ and (max-device-width : 1024px)
 .project-expand-button
 {
     bottom: 25px;
-    width: 30px;
-    height: auto;
+    height: 30px;
     margin-left: 50%;
 
     background-color: transparent;
