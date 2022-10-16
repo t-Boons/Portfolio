@@ -455,9 +455,8 @@ and (max-device-width : 1024px)
     bottom: 25px;
     height: 30px;
     width: 30px;
-    max-width: 30px;
-    max-height: 30px;
     margin-left: 50%;
+    flex-direction: row;
 
     cursor: pointer;
 
