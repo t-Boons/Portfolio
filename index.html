@@ -156,8 +156,8 @@
                     </div>
 
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(0)"> <img
-                                src="img/arrow_down_white.png"></button>
+                        <div class="project-expand-button" onclick="ExpandProject(0)"> <img
+                                src="img/arrow_down_white.png"></div>
                     </div>
                 </div>
             </div>
@@ -194,8 +194,8 @@
                         <p class="date">4 / 2022</p>
                     </div>
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(1)"> <img
-                                src="img/arrow_down_white.png"></button>
+                        <div class="project-expand-button" onclick="ExpandProject(1)"> <img
+                                src="img/arrow_down_white.png"></div>
                     </div>
                 </div>
                 <div class="project-thumbnail-container">
@@ -234,8 +234,8 @@
                     </div>
 
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(2)"> <img
-                                src="img/arrow_down_white.png"></button>
+                        <div class="project-expand-button" onclick="ExpandProject(2)"> <img
+                                src="img/arrow_down_white.png"></div>
                     </div>
                 </div>
             </div>
@@ -274,8 +274,8 @@
                     </div>
 
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(3)"> <img
-                                src="img/arrow_down_white.png"></button>
+                        <div class="project-expand-button" onclick="ExpandProject(3)"> <img
+                                src="img/arrow_down_white.png"></div>
                     </div>
                 </div>
 
@@ -317,8 +317,8 @@
                     </div>
 
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(4)"> <img
-                                src="img/arrow_down_white.png"></button>
+                        <div class="project-expand-button" onclick="ExpandProject(4)"> <img
+                                src="img/arrow_down_white.png"></div>
                     </div>
                 </div>
             </div>
@@ -354,8 +354,8 @@
                     </div>
 
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(5)"> <img
-                                src="img/arrow_down_white.png"></button>
+                        <div class="project-expand-button" onclick="ExpandProject(5)"> <img
+                                src="img/arrow_down_white.png"></div>
                     </div>
                 </div>
 
@@ -393,7 +393,7 @@
                         href="https://github.com/TygoB-B5">Github</a>
                         <a class="project-source-button" target=”_blank”
                             href="https://www.linkedin.com/in/tygo-boons-0a6b34251/">LinkedIn</a>
-                            <a id="email-button" class="project-source-button">Email</a>
+                            <a id="email-button" style="cursor: pointer;" class="project-source-button">Email</a>
                             <script>
                                 const btn = document.getElementById('email-button');
                                 btn.addEventListener('click', function handleClick() {
@@ -408,7 +408,13 @@
             </div>
 
         </div>
-        <div class="spacer" style="height: 50px;"></div>
+        <div class="spacer" style="height: 25px;"></div>
+
+        <div id="copyright-notice-container">
+            <p id="copyright-notice-text">&copy; 2022 Tygo Boons</p>
+        </div>
+
+        <div class="spacer" style="height: 25px;"></div>
     </div>
 
 </body>

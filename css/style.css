@@ -477,3 +477,20 @@ and (max-device-width : 1024px)
 
 
 /*#endregion projects*/
+
+
+#copyright-notice-container
+{
+    display: table;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(1, 1, 1);
+}
+
+#copyright-notice-text
+{
+    padding-left: 25px;
+
+    display: table-cell;
+    vertical-align: middle;
+}
