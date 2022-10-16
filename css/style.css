@@ -456,8 +456,12 @@ and (max-device-width : 1024px)
     height: 30px;
     width: 30px;
     margin-left: 50%;
-    flex-direction: row;
 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    
     cursor: pointer;
 
     transition-duration: 0.25s;
