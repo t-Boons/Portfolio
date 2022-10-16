@@ -453,7 +453,7 @@ and (max-device-width : 1024px)
 {
     bottom: 25px;
     width: 30px;
-    height: 30px;
+    height: auto;
     margin-left: 50%;
 
     background-color: transparent;
