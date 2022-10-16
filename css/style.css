@@ -451,16 +451,15 @@ and (max-device-width : 1024px)
 
 .project-expand-button
 {
+    position: relative;
     bottom: 25px;
     height: 30px;
     width: 30px;
+    max-width: 30px;
+    max-height: 30px;
     margin-left: 50%;
 
-    background-color: transparent;
-    border: none;
-    -webkit-appearance: none;
     cursor: pointer;
-    border-radius: 0;
 
     transition-duration: 0.25s;
     opacity: 0.5;
