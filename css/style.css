@@ -461,7 +461,7 @@ and (max-device-width : 1024px)
     border: none;
     cursor: pointer;
     z-index: 3;
-
+    
     cursor: pointer;
 
     transition-duration: 0.25s;
@@ -475,8 +475,8 @@ and (max-device-width : 1024px)
 
 .project-expand-button img
 {
-    height: 30px;
-    width: 30px;
+    width: 100%;
+    height: 100%;
 }
 
 
