@@ -215,6 +215,9 @@ html { -ms-overflow-style: none; }
     width: max-content;
     height: max-content;
     font-weight: 100;
+
+    width: 750px;
+    word-wrap: break-word;
 }
 
 #introduction-inline
@@ -453,8 +456,8 @@ and (max-device-width : 1024px)
 {
     position: relative;
     bottom: 25px;
-    height: 30px;
-    width: 30px;
+    height: 30px !important;
+    width: 30px !important;
     margin-left: 50%;
 
     background-color: transparent;
@@ -475,8 +478,8 @@ and (max-device-width : 1024px)
 
 .project-expand-button img
 {
-    height: 30px;
-    width: 30px;
+    height: 30px !important;
+    width: 30px !important;
 }
 
 
