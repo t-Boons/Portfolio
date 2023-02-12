@@ -147,7 +147,7 @@
                             </div>
         
                             <div class="project-expand-container">
-                                <button class="project-expand-button" onclick="ExpandProject(0)"> <img
+                                <button class="project-expand-button" onclick="ExpandProject(this)"> <img
                                         src="img/arrow_down_white.png"></button>
                             </div>
                         </div>
@@ -200,7 +200,7 @@
                     </div>
 
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(0)"> <img
+                        <button class="project-expand-button" onclick="ExpandProject(this)"> <img
                                 src="img/arrow_down_white.png"></button>
                     </div>
                 </div>
@@ -238,7 +238,7 @@
                         <p class="date">4 / 2022</p>
                     </div>
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(1)"> <img
+                        <button class="project-expand-button" onclick="ExpandProject(this)"> <img
                                 src="img/arrow_down_white.png"></button>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
                     </div>
 
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(2)"> <img
+                        <button class="project-expand-button" onclick="ExpandProject(this)"> <img
                                 src="img/arrow_down_white.png"></button>
                     </div>
                 </div>
@@ -316,7 +316,7 @@
                     </div>
 
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(3)"> <img
+                        <button class="project-expand-button" onclick="ExpandProject(this)"> <img
                                 src="img/arrow_down_white.png"></button>
                     </div>
                 </div>
@@ -359,7 +359,7 @@
                     </div>
 
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(4)"> <img
+                        <button class="project-expand-button" onclick="ExpandProject(this)"> <img
                                 src="img/arrow_down_white.png"></button>
                     </div>
                 </div>
@@ -398,7 +398,7 @@
                     </div>
 
                     <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(5)"> <img
+                        <button class="project-expand-button" onclick="ExpandProject(this)"> <img
                                 src="img/arrow_down_white.png"></button>
                     </div>
                 </div>
@@ -467,9 +467,10 @@
 <script>
     setGreetingFromTime(document.getElementById('day-text'));
 
-    function ExpandProject(elementIndex) {
+    function ExpandProject(buttonElement) {
+
         var elements = document.getElementsByClassName('project');
-        var projectToUpdate = elements[elementIndex];
+        var projectToUpdate = buttonElement.parentNode.parentNode.parentNode;
 
         var animExpand = "project-expand";
         var animShrink = "project-shrink";
