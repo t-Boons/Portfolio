@@ -124,6 +124,81 @@
 
         <div id="projects-container">
 
+             <!--RayGun-->
+             <div class="project"
+             style='background-image: url("img/projects/raygun.png"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));'>
+
+             <div class="project-info-container">
+                 <p class="project-title">RayGun</p>
+                 <p class="project-description">Raygun is a CPU raytracer written in C++.</p>
+                     
+                 <div class="project-sources">
+                     <a class="project-source-button" target=”_blank” href="https://github.com/t-Boons/RayGun">Code</a>
+                 </div>
+
+                 <div class="software-icons-container">
+                     <img class="software-icon" src="img/icons/cpp.png">
+                     <img class="software-icon" src="img/icons/opengl.png">
+                 </div>
+
+                 <video class="project-video" src="vid/projects/raygun.mp4" style="max-width: 50%;  margin-left: 27%;";></video>
+
+                 <div class="date-container">
+                     <p class="date">1 / 2023</p>
+                 </div>
+
+                 <div class="project-expand-container">
+                     <button class="project-expand-button" onclick="ExpandProject(this)"> <img
+                             src="img/arrow_down_white.png"></button>
+                 </div>
+             </div>
+
+             <div class="project-thumbnail-container">
+                 <img class="project-thumbnail" src="img/projects/raygun.png">
+             </div>
+
+             
+         </div>
+
+             <!--Epic Pitfall-->
+             <div class="project"
+             style='background-image: url("img/projects/epicpitfall.png"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));'>
+
+             <div class="project-thumbnail-container">
+                 <img class="project-thumbnail" src="img/projects/epicpitfall.png">
+             </div>
+
+             <div class="project-info-container">
+                 <p class="project-title">Epic Pitfall</p>
+                <p class="project-description">Epic Pitfall is a 2D platformer game created using C++. The levels are created using an
+                    application called Tiled. It allows you to create levels and place obstacles. The rendering was partially taken care of
+                    by a given template but I heavily modified it to fit my needs more. The rest is all created from the ground up and does
+                    not use the C++ stl library. The game is fully CPU rendered and is
+                    meant to mimic how games were rendered back in the day. So every sprite is rendered to a screen buffer and than displayed.</p>
+
+                    <div class="project-sources">
+                        <a class="project-source-button" target=”_blank” href="https://github.com/t-Boons/EpicPitfall/releases/tag/v1.0">Download</a>
+                        <a class="project-source-button" target=”_blank” href="https://github.com/t-Boons/EpicPitfall">Code</a>
+                    </div>
+
+                 <div class="software-icons-container">
+                    <img class="software-icon" src="img/icons/cpp.png">
+                    <img class="software-icon" src="img/icons/opengl.png">
+                 </div>
+
+                 <video class="project-video" src="vid/projects/epicpitfall.mp4"></video>
+
+                 <div class="date-container">
+                     <p class="date">6 / 2022</p>
+                 </div>
+
+                 <div class="project-expand-container">
+                     <button class="project-expand-button" onclick="ExpandProject(this)"> <img
+                             src="img/arrow_down_white.png"></button>
+                 </div>
+             </div>
+         </div>
+
                         <!--MyBuasIntake-->
                         <div class="project"
                         style='background-image: url("img/projects/mybuasintake.png"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));'>
@@ -328,108 +403,15 @@
                     <img class="project-thumbnail" src="img/projects/antpire.png">
                 </div>
             </div>
-            <!--OSCSpaceShooter-->
-            <div class="project"
-                style='background-image: url("img/projects/oscspaceshooter.jpg"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));'>
-                <div class="project-thumbnail-container">
-                    <img class="project-thumbnail" src="img/projects/oscspaceshooter.jpg">
-                </div>
-                <div class="project-info-container">
-                    <p class="project-title">Space Shooter OSC</p>
-                    <p class="project-description">Space Shooter OSC is a space shooter game where you have to shoot
-                        your opponent in space. By using
-                        your Phone as a controller with the OSC (Open sound control) protocol you can fly around and
-                        shoot.
-                        The OSC Protocol is powered by the OpenFrameworks library and the 3D Rendering is fully written
-                        using Legacy OpenGL.
-                    </p>
-
-                    <div class="project-sources">
-                        <a class="project-source-button" target=”_blank”
-                            href="https://github.com/t-Boons/OSCSpaceShooter">Code</a>
-                    </div>
-
-                    <div class="software-icons-container">
-                        <img class="software-icon" src="img/icons/cpp.png">
-                        <img class="software-icon" src="img/icons/openframeworks.png">
-                        <img class="software-icon" src="img/icons/opengl.png">
-                    </div>
-
-                    <video class="project-video" src="vid/projects/oscspaceshooter.mp4"></video>
-
-                    <div class="date-container">
-                        <p class="date">2 / 2022</p>
-                    </div>
-
-                    <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(this)"> <img
-                                src="img/arrow_down_white.png"></button>
-                    </div>
-                </div>
-            </div>
-            <!--TheCliff-->
-            <div class="project"
-                style='background-image: url("img/projects/thecliff.jpg"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));'>
-
-                <div class="project-info-container">
-                    <p class="project-title">The Cliff</p>
-                    <p class="project-description">The cliff is a VR platforming game made in 4 weeks in collaboration
-                        with several game
-                        artists. The goal of the game is to parkour to the other side of the cliff without falling off.
-                        You achieve this by
-                        jumping over platforms that appear and dissapear based on music. Other obstacles include 2
-                        ladders that you have to climb on to get to the other side.
-                    </p>
-
-                    <div class="project-sources">
-                        <a class="project-source-button" target=”_blank”
-                            href="https://github.com/t-Boons/TheCliff">Code</a>
-                        <a class="project-source-button" target=”_blank”
-                            href="https://gamejolt.com/games/thecliff/575740">Download</a>
-                    </div>
-
-                    <div class="software-icons-container">
-                        <img class="software-icon" src="img/icons/csharp.png">
-                        <img class="software-icon" src="img/icons/unity.png">
-                        <img class="software-icon" src="img/icons/steamvr.png">
-                    </div>
-
-                    <video class="project-video" src="vid/projects/thecliff.mp4"></video>
-
-                    <div class="date-container">
-                        <p class="date">3 / 2021</p>
-                    </div>
-
-                    <div class="project-expand-container">
-                        <button class="project-expand-button" onclick="ExpandProject(this)"> <img
-                                src="img/arrow_down_white.png"></button>
-                    </div>
-                </div>
-
-                <div class="project-thumbnail-container">
-                    <img class="project-thumbnail" src="img/projects/thecliff.jpg">
-                </div>
-            </div>
+            
             <!--ManyMore-->
-            <div class="project" style='background-color: rgb(3, 3, 3);'>
+            <div class="project" style='background-image: url("img/tygo_logo_colored.png"), linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0.95));'>
 
                 <div class="project-thumbnail-container">
-                    <img class="project-thumbnail" src="img/projects/games.png">
+                    <img class="project-thumbnail" src="img/tygo_logo_colored.png" style="max-width: 50%; height: auto;">
                 </div>
 
                 <div class="project-info-container">
-                    <p class="project-title">And many more!</p>
-                    <p class="project-description">I have been making projects for many years now and here I only
-                        display the
-                        most recent and or
-                        best ones that I am the most proud of. My projects date back to 2018 when I started getting in
-                        to programming.
-                    </p>
-
-                    <div class="project-sources">
-                        <a class="project-source-button" target=”_blank” href="https://github.com/t-Boons">Github</a>
-                        <a class="project-source-button" target=”_blank” href="https://gamejolt.com/@Bean5">Gamejolt</a>
-                    </div>
 
                     <p class="project-title">Resume & Contact info,</p>
                     <p class="project-description">Feel free to contact me with any of the sources in this tab below.
@@ -457,7 +439,7 @@
         <div class="spacer" style="height: 25px;"></div>
 
         <div id="copyright-notice-container">
-            <p id="copyright-notice-text">&copy; 2022 Tygo Boons</p>
+            <p id="copyright-notice-text">&copy; 2024 Tygo Boons</p>
         </div>
 
         <div class="spacer" style="height: 25px;"></div>
