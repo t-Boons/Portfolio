@@ -1,0 +1,110 @@
+%!Adobe-FontList 1.24
+%Locale:0x413
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+FullName:Minion Pro
+MenuName:Minion Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\tygo\Desktop\Portfolio2022\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:1361531780
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:SourceSansPro-ExtraLight
+FamilyName:Source Sans Pro
+StyleName:ExtraLight
+FullName:Source Sans Pro ExtraLight
+MenuName:Source Sans Pro ExtraLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\tygo\Desktop\Portfolio2022\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\SourceSansPro-ExtraLight.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:95224
+FileModTime:1361529526
+WeightClass:200
+WidthClass:5
+AngleClass:0
+DesignSize:100
+NameArray:0,Mac,4,Source Sans Pro ExtraLight
+NameArray:0,Win,1,Source Sans Pro ExtraLight
+NameArray:0,Win,16,Source Sans Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:SourceSansPro-Light
+FamilyName:Source Sans Pro
+StyleName:Light
+FullName:Source Sans Pro Light
+MenuName:Source Sans Pro Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\tygo\Desktop\Portfolio2022\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\SourceSansPro-Light.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:99628
+FileModTime:1361529526
+WeightClass:300
+WidthClass:5
+AngleClass:0
+DesignSize:100
+NameArray:0,Mac,4,Source Sans Pro Light
+NameArray:0,Win,1,Source Sans Pro Light
+NameArray:0,Win,16,Source Sans Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SegoeUIEmoji
+FamilyName:Segoe UI Emoji
+StyleName:Regular
+FullName:Segoe UI Emoji
+MenuName:Segoe UI Emoji
+StyleBits:0
+WritingScript:Emoji
+OutlineFileName:C:\Users\tygo\Desktop\Portfolio2022\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\seguiemj.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:yes
+VariableFontType:NonVariableFont
+FileLength:2766328
+FileModTime:1650630050
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Segoe UI Emoji
+NameArray:0,Win,1,Segoe UI Emoji
+%EndFont
+
