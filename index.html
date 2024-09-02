@@ -46,7 +46,7 @@
     <meta property="og:url" content="https://tygoboons.nl/" />
 
     <meta property="og:description"
-        content="My name is Tygo Boons, a 20-year-old game/software engineer from the Netherlands with a great passion to create and develop software and games. I enjoy taking on new challenges and helping others with my knowledge. I am currently studying to get my second game/software engineer degree at the Breda University of Applied Science in the Netherlands. Here I will showcase some of the many projects that I have created in the 7 years of my programming career.">
+        content="My name is Tygo Boons, a game/software engineer from the Netherlands with a great passion to create and develop software and games. I enjoy taking on new challenges and helping others with my knowledge. I am currently studying to get my second game/software engineer degree at the Breda University of Applied Science in the Netherlands. Here I will showcase some of the many projects that I have created in the 7 years of my programming career.">
 </head>
 
 <div id="loading-mask"></div>
@@ -97,7 +97,7 @@
 
             setTimeout(() => {
                 SwitchContentAnimation();
-            }, 2500);
+            }, 2000);
         </script>
 
         <p id="introduction-title">Hello,</p>
@@ -106,7 +106,7 @@
                 style="height: 1px; width: 75vw; background-color: white; margin-left: 12.5vw; opacity: 0.3;"></div>
             <div class="spacer" style="height: 25px;"></div>
             <div id="introduction-inline">
-                <p id="intro-text">My name is Tygo Boons, a 20-year-old game/software engineer from the Netherlands
+                <p id="intro-text">My name is Tygo Boons, a [AGE]-year-old game/software engineer from the Netherlands
                     with a great passion
                     to create and develop software and games. I enjoy taking on new challenges and helping others
                     with my
@@ -118,12 +118,56 @@
             </div>
             <div class="spacer" style="height: 25px;"></div>
         </div>
+        
         <p id="projects-title">My Projects,</p>
 
         <div class="line" style="height: 1px; width: 75vw; background-color: white; margin-left: 12.5vw; opacity: 0.3;">
         </div>
 
         <div id="projects-container">
+
+
+             <!--Broomstick blitz-->
+             <div class="project"
+             style='background-image: url("img/projects/broomstickblitz.png"), linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));'>
+
+             <div class="project-thumbnail-container">
+                 <img class="project-thumbnail" src="img/projects/broomstickblitz.png">
+             </div>
+
+             <div class="project-info-container">
+                 <p class="project-title">Broomstick Blitz</p>
+                <p class="project-description">Broomstick Blitz was a collaborative project created with 11 other people from several disciplines. 
+                    The game is highly inspired by the game Mashed, where the main goal is to outrun and or
+                    drive the other players off the track to win. While not shown in the trailer, the game features a physically based lens-flare system 
+                    that was based on <a href="https://graphics.tudelft.nl/Publications-new/2013/LE13/PracticalReal-TimeLens.pdf">this</a> research paper. 
+                    Implementing this paper was quite a challenge, but I managed to do it. Another big challenge was using 
+                    Unreal Engine's RHI Rendering hardware interface in C++. Since Unreal lacks documentation on the subject, I had to dive into the source code myself. 
+                </p>
+
+                    <div class="project-sources">
+                        <a class="project-source-button" target=”_blank” href="https://buas.itch.io/broomstick-blitz">Download</a>
+                    </div>
+
+                 <div class="software-icons-container">
+                    <img class="software-icon" src="img/icons/cpp.png">
+                    <img class="software-icon" src="img/icons/unreal.png">
+                 </div>
+
+                 <video class="project-video" src="vid/projects/broomstickblitz.mp4"></video>
+
+                 <div class="date-container">
+                     <p class="date">5 / 2024</p>
+                 </div>
+
+                 <div class="project-expand-container">
+                     <button class="project-expand-button" onclick="ExpandProject(this)"> <img
+                             src="img/arrow_down_white.png"></button>
+                 </div>
+             </div>
+         </div>
+
+
 
              <!--RayGun-->
              <div class="project"
@@ -415,7 +459,7 @@
                 <div class="project-info-container">
 
                     <p class="project-title">Resume & Contact info,</p>
-                    <p class="project-description">Feel free to contact me with any of the sources in this tab below.
+                    <p class="project-description">Feel free to contact me with any of the sources in the tab below.
                     </p>
 
                     <div class="project-sources">
@@ -484,3 +528,44 @@
         projectVideo.currentTime = 0;
     }
 </script>
+
+<script>
+
+
+    function calculateDob(dob)
+    {
+        const birthDate = new Date(dob);
+        const today = new Date();
+    
+        var age = today.getFullYear() - birthDate.getFullYear();
+    
+        if(getDayOfYear(birthDate) > getDayOfYear(today))
+        {
+            age--;
+        }
+        
+        return age;
+    }
+    
+    function getDayOfYear(date)
+    {
+        const start = new Date(date.getFullYear(), 0, 0);
+        const diff = date - start;
+        const oneDay = 1000 * 60 * 60 * 24;
+        const dayOfYear = Math.floor(diff / oneDay);
+    
+        return dayOfYear;
+    }
+    
+    function replaceAgeInText(age)
+    {
+            const introTextElement = document.getElementById('intro-text');
+            var text = introTextElement.textContent;
+            text = text.replace('[AGE]', age);
+            introTextElement.textContent = text;
+    }
+    
+    // 7 because month starts at 0.
+    replaceAgeInText(calculateDob(new Date(2003, 7, 13)))
+    
+            </script>

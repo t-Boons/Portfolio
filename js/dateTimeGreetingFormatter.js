@@ -7,7 +7,7 @@ function setGreetingFromTime(elementToWriteTo)
     var text;
     if(isValueBetween(hours, 0, 6))
     {
-        text = "Good night,";
+        text = "Good evening,";
     }
     if(isValueBetween(hours, 6, 12))
     {
