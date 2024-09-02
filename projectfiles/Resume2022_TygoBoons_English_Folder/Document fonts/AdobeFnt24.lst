@@ -11,7 +11,7 @@ FullName:Minion Pro
 MenuName:Minion Pro
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\tygo\Desktop\Portfolio2022\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\MinionPro-Regular.otf
+OutlineFileName:C:\Users\tygo\Desktop\Portfolio\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\MinionPro-Regular.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -38,7 +38,7 @@ FullName:Source Sans Pro ExtraLight
 MenuName:Source Sans Pro ExtraLight
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\tygo\Desktop\Portfolio2022\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\SourceSansPro-ExtraLight.otf
+OutlineFileName:C:\Users\tygo\Desktop\Portfolio\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\SourceSansPro-ExtraLight.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -66,7 +66,7 @@ FullName:Source Sans Pro Light
 MenuName:Source Sans Pro Light
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:C:\Users\tygo\Desktop\Portfolio2022\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\SourceSansPro-Light.otf
+OutlineFileName:C:\Users\tygo\Desktop\Portfolio\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\SourceSansPro-Light.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -94,7 +94,7 @@ FullName:Segoe UI Emoji
 MenuName:Segoe UI Emoji
 StyleBits:0
 WritingScript:Emoji
-OutlineFileName:C:\Users\tygo\Desktop\Portfolio2022\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\seguiemj.ttf
+OutlineFileName:C:\Users\tygo\Desktop\Portfolio\projectfiles\Resume2022_TygoBoons_English_Folder\Document fonts\seguiemj.ttf
 DataFormat:sfntData
 hasSVG:no
 hasCOLR:yes
