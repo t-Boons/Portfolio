@@ -113,7 +113,7 @@
                     knowledge.
                     I am currently studying to get my second game/software engineer degree at the Breda University of Applied Science in the Netherlands.
                     Here I will showcase some of the many projects that I have created in
-                    the 7 years of my programming career.</p>
+                    the [YOP] years of my programming career.</p>
                 <img src="img/tygo_logo_colored.png" style="width: 150px; height: 150px; margin-left: 30px;">
             </div>
             <div class="spacer" style="height: 25px;"></div>
@@ -564,8 +564,18 @@
             text = text.replace('[AGE]', age);
             introTextElement.textContent = text;
     }
+
+    function replaceYearsOfProgrammingText(age)
+    {
+            const introTextElement = document.getElementById('intro-text');
+            var text = introTextElement.textContent;
+            text = text.replace('[YOP]', age);
+            introTextElement.textContent = text;
+    }
     
     // 7 because month starts at 0.
     replaceAgeInText(calculateDob(new Date(2003, 7, 13)))
     
+    replaceYearsOfProgrammingText(calculateDob(new Date(2003, 7, 13)) - 13)
+
             </script>
