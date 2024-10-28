@@ -245,11 +245,11 @@ html { -ms-overflow-style: none; }
 
 @keyframes project-expand {
     0% {height: 500px}
-    100% {height: 875px;}
+    100% {height: 900px;}
 }
 
 @keyframes project-shrink {
-    0% {height: 875px}
+    0% {height: 900px}
     100% {height: 500px;}
 }
 
